@@ -1,0 +1,7 @@
+.column{
+    column-count: 3;
+}
+
+h1{
+    column-span: all;
+}
