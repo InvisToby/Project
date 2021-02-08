@@ -104,6 +104,7 @@ th{
     background-color: steelblue;
     top: 0; 
     width: 100%;
+    z-index: 100;
 }
 
 .navbar_1a a{
@@ -129,6 +130,7 @@ th{
     background-color: darkslategray;
     top: 50px;
     width: 100%;
+    z-index: 100;
 }
 
 .navbar_2 a{
@@ -196,9 +198,105 @@ ul{
 }
 /*-------------------Challenge 5-8 image fade----------------*/
 
+.container_overlay{
+    position: relative;
+    width: 50%;
+}
+
+.container_overlay img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.middle_text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #005a79;
+}
+
+.container_overlay:hover .middle_text{
+    opacity: 1;
+}
+
+.overlay_text{
+    color: rgb(236, 164, 70);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.container_overlay2{
+    position: relative;
+    width: 50%;
+}
+
+.container_overlay2 img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle_text2{
+    transition: 2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container_overlay2:hover img{
+    opacity: 0.5;
+}
+.container_overlay2:hover .middle_text2{
+    opacity: 1;
+}
+
+.overlay_text2{
+background-color: #9ed1e9;
+color: white;
+font-size: 20px;
+padding: 20px 30px;
+}
+
 /*-------------------Challenge 5-9 video----------------*/
 
 /*-------------------Challenge 5-10 video text overlay----------------*/
+
+.vid_overlay{
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.vid_by{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 /*-------------------Challenge 5-11----------------*/
 
